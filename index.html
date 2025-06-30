@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>01/07</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #8B0000; /* Rojo oscuro */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+    .contenido {
+      flex: 2;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .imagenes {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .imagenes img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .audio-player {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+    button {
+      background-color: #8B0000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #600000;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Te quiero regalar esto, me demore demasiado haciéndolo, pero es porque no sabía si hacerlo o no...</h1>
+    <p>No sé cómo empezar esto, quiero expresarte lo mucho que te amo. Quizás no te hayas dado cuenta, pero tú me has ayudado demasiado estos últimos días. Antes de conocerte, estaba al borde del colapso. Y aunque al principio estaba confundido, decidí aceptarte dentro de mi vida. Me has ayudado bastante, aunque quizás no lo hayas notado. Y al mismo tiempo, siento que yo he hecho tan poco por ti. Siento que es injusto, cómo tú me has ayudado todo este tiempo, y yo no soy capaz de hacer algo para agradecértelo.</p>
+
+    <p>Debería aprovechar para contarte la verdad: No estoy bien. Me siento así desde hace meses, desde hace 8 meses creo. No sé cómo explicar lo que siento, es como una angustia constante, la siento cada día, y cuando estoy en el colegio empeora. No creo que tenga una razón, pero he consultado en diferentes medios relacionados con la psicología, y todo da a entender que sí hay una razón, solo que nuestra cabeza la ignora. Siento que me estoy distanciando de toda la gente a mi alrededor, incluyéndote a ti, y lo odio, y eso me frustra, demasiado.</p>
+
+    <p>Cambiando de tema, se supone que te regalaré esto como regalo de cumpleaños. Quería disculparme por hacerte sentir mal, ese día me sentí terrible. Siento que no he sido tan honesto contigo, y ni yo sé por qué. Aún me cuesta confiar en ti un poco, pero espero que entiendas que no solo me pasa contigo, sino que me pasa con todas las personas que conozco. Podría simplemente haberte dicho feliz cumpleaños, pero prefiero decirte gracias… por existir y dejarme amarte. Eres de las pocas personas que en verdad me hacen feliz. No sabes lo emocionado que me pongo cuando me hablas.</p>
+
+    <p>Perdón si no estoy en tu cumpleaños. Quisiera ir, solo para poder verte. Te amo demasiado, te amo por lo que haces por mí, porque me haces sentir mejor, y eso me calma... Aunque me da miedo pensar en estar contigo, me pone nervioso. No sé cómo sería mi reacción al estar cerca tuyo, además de que esta semana he estado mentalmente inestable. Tenía pensado escribir una carta, pero mi letra es horrible, así que prefiero hacerlo de esta manera. No sé si debería decírtelo o no, pero intenté escribir la carta con mi propia sangre (?).</p>
+
+    <p>No sé qué más decirte. Creo que ya te conté que me cuesta expresar lo que siento, así que cuando tengo que hacer este tipo de cosas normalmente me limito demasiado... Esta página es muy simple, pero me costó demasiado hacerla por esto. Realmente me tuve que esforzar en tratar de expresar lo que siento... No tengo nada más por agregar, siento que escribí muy poco. Perdóname.</p>
+
+    <p>No le muestres esto a nadie, quiero que solo tú lo veas, no compartas el link.</p>
+  </div>
+
+  <div class="imagenes">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktS7tBJ-sOHQsZEj0QEoZdm6G62OJa42sQw&s" width="200" alt="Imagen significativa">
+  </div>
+
+  <div class="audio-player">
+    <audio id="miAudio">
+      <source src="https://ia601505.us.archive.org/19/items/drukqs-flac/09.%20Aphex%20Twin%20-%20Avril%2014th.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="toggleAudio()">♥</button>
+  </div>
+
+  <script>
+    const audio = document.getElementById('miAudio');
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
